@@ -27,6 +27,8 @@ jobs:
 
       - id: jobs
         uses: kmanimaran/list-folder-action@v4
+        with:
+          path: .
 
   ci:
     runs-on: ${{ matrix.platform }}
