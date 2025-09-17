@@ -1,0 +1,2 @@
+Event: Stop
+[2m2024-10-07T15:05:42.355485Z[0m [35mTRACE[0m [1mevent_stream_loop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream closed for node `dora-openai-server` [2m[3mnode_id[0m[2m=[0mNodeId("dora-openai-server")[0m

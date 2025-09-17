@@ -1,0 +1,5 @@
+[2m2024-10-07T15:07:10.071647Z[0m [35mTRACE[0m [1mevent_stream_loop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream closed for node `dora-echo` [2m[3mnode_id[0m[2m=[0mNodeId("dora-echo")[0m
+[2m2024-10-07T15:07:10.072298Z[0m [35mTRACE[0m [1mdrop_stream_loop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream closed for node `dora-echo` [2m[3mnode_id[0m[2m=[0mNodeId("dora-echo")[0m
+[2m2024-10-07T15:07:10.072378Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m waiting for drop stream thread [2m[3mnode_id[0m[2m=[0mdora-echo[0m
+[2m2024-10-07T15:07:10.072489Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream thread done [2m[3mnode_id[0m[2m=[0mdora-echo[0m
+[2m2024-10-07T15:07:10.072777Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream thread finished [2m[3mnode_id[0m[2m=[0mdora-echo[0m

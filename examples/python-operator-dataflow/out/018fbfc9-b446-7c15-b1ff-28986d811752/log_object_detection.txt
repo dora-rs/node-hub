@@ -1,0 +1,42 @@
+  [2m2024-05-28T15:20:18.266632Z[0m [32m INFO[0m [1;32mdora_runtime[0m[32m: [32mspawning main task[0m
+    [2;3mat[0m binaries/runtime/src/lib.rs:71
+
+  [2m2024-05-28T15:20:18.977095Z[0m [34mDEBUG[0m [1;34mhyper::client::connect::dns[0m[34m: [34mresolving host="localhost"[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-0.14.28/src/client/connect/dns.rs:122
+
+  [2m2024-05-28T15:20:18.977364Z[0m [34mDEBUG[0m [1;34mhyper::client::connect::http[0m[34m: [34mconnecting to [::1]:4317[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-0.14.28/src/client/connect/http.rs:542
+
+  [2m2024-05-28T15:20:18.977491Z[0m [34mDEBUG[0m [1;34mhyper::client::connect::http[0m[34m: [34mconnecting to 127.0.0.1:4317[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-0.14.28/src/client/connect/http.rs:542
+
+  [2m2024-05-28T15:20:18.977601Z[0m [34mDEBUG[0m [1;34mtonic::transport::service::reconnect[0m[34m: [34mreconnect::poll_ready: hyper::Error(Connect, ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" }))[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tonic-0.11.0/src/transport/service/reconnect.rs:105
+
+  [2m2024-05-28T15:20:18.977622Z[0m [34mDEBUG[0m [1;34mtower::buffer::worker[0m[34m: [1;34mservice.ready[0m[34m: true, [34mprocessing request[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tower-0.4.13/src/buffer/worker.rs:197
+
+  [2m2024-05-28T15:20:18.977638Z[0m [34mDEBUG[0m [1;34mtonic::transport::service::reconnect[0m[34m: [34merror: error trying to connect: tcp connect error: Connection refused (os error 111)[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tonic-0.11.0/src/transport/service/reconnect.rs:144
+
+  [2m2024-05-28T15:20:20.051851Z[0m [32m INFO[0m [1;32mdora_runtime[0m[32m: [32mAll operators are ready, starting runtime[0m
+    [2;3mat[0m binaries/runtime/src/lib.rs:131
+
+  [2m2024-05-28T15:20:20.052924Z[0m [34mDEBUG[0m [1;34mtower::buffer::worker[0m[34m: [34mbuffer closing; waking pending tasks[0m
+    [2;3mat[0m /home/philipp/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tower-0.4.13/src/buffer/worker.rs:59
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+RuntimeError: Dora Runtime raised an error.
+
+Caused by:
+   0: main task failed
+   1: failed to init event stream
+   2: subscribe failed: Some nodes exited before subscribing to dora: {NodeId("plot")}
+
+      This is typically happens when an initialization error occurs
+                      in the node or operator. To check the output of the failed
+                      nodes, run `dora logs 018fbfc9-b446-7c15-b1ff-28986d811752 plot`.
+
+Location:
+    apis/rust/node/src/event_stream/mod.rs:90:17

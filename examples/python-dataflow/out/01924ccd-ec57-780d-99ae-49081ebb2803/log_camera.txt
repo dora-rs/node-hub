@@ -1,0 +1,12 @@
+[ WARN:0@0.028] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ERROR:0@0.028] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
+[2m2024-10-02T10:37:02.690127Z[0m [35mTRACE[0m [1mevent_stream_loop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream closed for node `camera` [2m[3mnode_id[0m[2m=[0mNodeId("camera")[0m
+[2m2024-10-02T10:37:02.690340Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m waiting for 5 remaining drop tokens [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:02.690726Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m waiting for 4 remaining drop tokens [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:02.691078Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m waiting for 3 remaining drop tokens [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:02.691448Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m waiting for 2 remaining drop tokens [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:02.691809Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m waiting for 1 remaining drop tokens [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:12.691915Z[0m [33m WARN[0m [1mdrop[0m: [2mdora_node_api::node[0m[2m:[0m timeout while waiting for drop tokens; closing 1 shared memory regions that might still be used [2m[3mself.id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:12.692190Z[0m [35mTRACE[0m [1mdrop_stream_loop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream closed for node `camera` [2m[3mnode_id[0m[2m=[0mNodeId("camera")[0m
+[2m2024-10-02T10:37:12.692346Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream thread done [2m[3mnode_id[0m[2m=[0mcamera[0m
+[2m2024-10-02T10:37:12.692884Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream thread finished [2m[3mnode_id[0m[2m=[0mcamera[0m

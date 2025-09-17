@@ -1,0 +1,6 @@
+[2m2024-10-07T15:12:23.069525Z[0m [35mTRACE[0m [1mevent_stream_loop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream closed for node `dora-openai-server` [2m[3mnode_id[0m[2m=[0mNodeId("dora-openai-server")[0m
+[2m2024-10-07T15:12:23.069617Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m waiting for event stream thread [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:23.069663Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream thread finished [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:23.069993Z[0m [35mTRACE[0m [1mdrop_stream_loop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream closed for node `dora-openai-server` [2m[3mnode_id[0m[2m=[0mNodeId("dora-openai-server")[0m
+[2m2024-10-07T15:12:23.070010Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m waiting for drop stream thread [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:23.070078Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream thread done [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m

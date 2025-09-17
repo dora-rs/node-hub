@@ -1,0 +1,149 @@
+[2m2024-10-07T15:09:55.535143Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m remote_addr: 127.0.0.1:35486, local_addr: 127.0.0.1:8000
+[2m2024-10-07T15:09:55.535191Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:55.535216Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Busy }
+[2m2024-10-07T15:09:55.535249Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:55.535257Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m received 474 bytes
+[2m2024-10-07T15:09:55.535272Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse [3mbytes[0m[2m=[0m474
+[2m2024-10-07T15:09:55.535290Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse Complete(474)
+[2m2024-10-07T15:09:55.535311Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 15 headers
+[2m2024-10-07T15:09:55.535315Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is empty
+[2m2024-10-07T15:09:55.535325Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m method: GET, http_version: HTTP/1.1
+[2m2024-10-07T15:09:55.535328Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m endpoint: /v1/models
+[2m2024-10-07T15:09:55.535331Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m 404 The requested service endpoint is not found: /v1/models
+[2m2024-10-07T15:09:55.535343Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_version: HTTP/1.1
+[2m2024-10-07T15:09:55.535345Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_body_size: 59
+[2m2024-10-07T15:09:55.535347Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_status: 404
+[2m2024-10-07T15:09:55.535349Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_success: false
+[2m2024-10-07T15:09:55.535351Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_client_error: true
+[2m2024-10-07T15:09:55.535353Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_server_error: false
+[2m2024-10-07T15:09:55.535356Z[0m [35mTRACE[0m [1mencode_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Server::encode status=404, body=Some(Known(59)), req_method=Some(GET)
+[2m2024-10-07T15:09:55.535364Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m buffer.queue [3mself.len[0m[2m=[0m181 [3mbuf.len[0m[2m=[0m59
+[2m2024-10-07T15:09:55.535415Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 240 bytes
+[2m2024-10-07T15:09:55.535419Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:57.271408Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:57.271445Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m received 644 bytes
+[2m2024-10-07T15:09:57.271453Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse [3mbytes[0m[2m=[0m644
+[2m2024-10-07T15:09:57.271462Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse Complete(506)
+[2m2024-10-07T15:09:57.271480Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 16 headers
+[2m2024-10-07T15:09:57.271483Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is content-length (138 bytes)
+[2m2024-10-07T15:09:57.271491Z[0m [35mTRACE[0m [2mhyper::proto::h1::decode[0m[2m:[0m decode; state=Length(138)
+[2m2024-10-07T15:09:57.271495Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body completed
+[2m2024-10-07T15:09:57.271509Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m method: POST, http_version: HTTP/1.1, content-length: 138
+[2m2024-10-07T15:09:57.271514Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m endpoint: /v1/chat/completions
+[2m2024-10-07T15:09:57.271516Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Handling the coming chat completion request.
+[2m2024-10-07T15:09:57.271518Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Prepare the chat completion request.
+[2m2024-10-07T15:09:57.271533Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m user: chatcmpl-57b70863-133e-4c94-bc2b-891a9009d9f0
+[2m2024-10-07T15:09:57.271542Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: KeepAlive, writing: Init, keep_alive: Busy }
+[2m2024-10-07T15:09:57.358865Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:57.358882Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m 500 Internal Server Error: Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:57.358890Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Send the chat completion response.
+[2m2024-10-07T15:09:57.358898Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_version: HTTP/1.1
+[2m2024-10-07T15:09:57.358900Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_body_size: 136
+[2m2024-10-07T15:09:57.358902Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_status: 500
+[2m2024-10-07T15:09:57.358904Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_success: false
+[2m2024-10-07T15:09:57.358906Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_client_error: false
+[2m2024-10-07T15:09:57.358908Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_server_error: true
+[2m2024-10-07T15:09:57.358915Z[0m [35mTRACE[0m [1mencode_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Server::encode status=500, body=Some(Known(136)), req_method=Some(POST)
+[2m2024-10-07T15:09:57.358930Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m buffer.queue [3mself.len[0m[2m=[0m194 [3mbuf.len[0m[2m=[0m136
+[2m2024-10-07T15:09:57.358968Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 330 bytes
+[2m2024-10-07T15:09:57.358974Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:57.358983Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:57.358987Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:57.754134Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:57.754206Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m received 644 bytes
+[2m2024-10-07T15:09:57.754231Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse [3mbytes[0m[2m=[0m644
+[2m2024-10-07T15:09:57.754245Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse Complete(506)
+[2m2024-10-07T15:09:57.754270Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 16 headers
+[2m2024-10-07T15:09:57.754275Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is content-length (138 bytes)
+[2m2024-10-07T15:09:57.754283Z[0m [35mTRACE[0m [2mhyper::proto::h1::decode[0m[2m:[0m decode; state=Length(138)
+[2m2024-10-07T15:09:57.754288Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body completed
+[2m2024-10-07T15:09:57.754301Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m method: POST, http_version: HTTP/1.1, content-length: 138
+[2m2024-10-07T15:09:57.754306Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m endpoint: /v1/chat/completions
+[2m2024-10-07T15:09:57.754310Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Handling the coming chat completion request.
+[2m2024-10-07T15:09:57.754313Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Prepare the chat completion request.
+[2m2024-10-07T15:09:57.754333Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m user: chatcmpl-b93fecf0-ac41-4b8a-91db-8833c56ce8a1
+[2m2024-10-07T15:09:57.754344Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: KeepAlive, writing: Init, keep_alive: Busy }
+[2m2024-10-07T15:09:57.755420Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:57.755429Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m 500 Internal Server Error: Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:57.755437Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Send the chat completion response.
+[2m2024-10-07T15:09:57.755445Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_version: HTTP/1.1
+[2m2024-10-07T15:09:57.755449Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_body_size: 136
+[2m2024-10-07T15:09:57.755451Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_status: 500
+[2m2024-10-07T15:09:57.755454Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_success: false
+[2m2024-10-07T15:09:57.755456Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_client_error: false
+[2m2024-10-07T15:09:57.755459Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_server_error: true
+[2m2024-10-07T15:09:57.755465Z[0m [35mTRACE[0m [1mencode_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Server::encode status=500, body=Some(Known(136)), req_method=Some(POST)
+[2m2024-10-07T15:09:57.755476Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m buffer.queue [3mself.len[0m[2m=[0m194 [3mbuf.len[0m[2m=[0m136
+[2m2024-10-07T15:09:57.755518Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 330 bytes
+[2m2024-10-07T15:09:57.755523Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:57.755532Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:57.755535Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:58.588435Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:58.588482Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m received 644 bytes
+[2m2024-10-07T15:09:58.588494Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse [3mbytes[0m[2m=[0m644
+[2m2024-10-07T15:09:58.588508Z[0m [35mTRACE[0m [1mparse_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Request.parse Complete(506)
+[2m2024-10-07T15:09:58.588531Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m parsed 16 headers
+[2m2024-10-07T15:09:58.588536Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body is content-length (138 bytes)
+[2m2024-10-07T15:09:58.588544Z[0m [35mTRACE[0m [2mhyper::proto::h1::decode[0m[2m:[0m decode; state=Length(138)
+[2m2024-10-07T15:09:58.588552Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m incoming body completed
+[2m2024-10-07T15:09:58.588572Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m method: POST, http_version: HTTP/1.1, content-length: 138
+[2m2024-10-07T15:09:58.588577Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m endpoint: /v1/chat/completions
+[2m2024-10-07T15:09:58.588581Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Handling the coming chat completion request.
+[2m2024-10-07T15:09:58.588584Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Prepare the chat completion request.
+[2m2024-10-07T15:09:58.588604Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m user: chatcmpl-e3d28d71-8fa7-4f26-afba-363fd51068cb
+[2m2024-10-07T15:09:58.588614Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: KeepAlive, writing: Init, keep_alive: Busy }
+[2m2024-10-07T15:09:58.589760Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:58.589770Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m 500 Internal Server Error: Failed to get chat completions. Reason: invalid reply data: ArrowData(PrimitiveArray<UInt8>
+[
+  72,
+  105,
+])
+[2m2024-10-07T15:09:58.589779Z[0m [32m INFO[0m [2mstdout[0m[2m:[0m Send the chat completion response.
+[2m2024-10-07T15:09:58.589787Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_version: HTTP/1.1
+[2m2024-10-07T15:09:58.589790Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_body_size: 136
+[2m2024-10-07T15:09:58.589793Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_status: 500
+[2m2024-10-07T15:09:58.589795Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_success: false
+[2m2024-10-07T15:09:58.589798Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_client_error: false
+[2m2024-10-07T15:09:58.589801Z[0m [31mERROR[0m [2mstdout[0m[2m:[0m response_is_server_error: true
+[2m2024-10-07T15:09:58.589807Z[0m [35mTRACE[0m [1mencode_headers[0m: [2mhyper::proto::h1::role[0m[2m:[0m Server::encode status=500, body=Some(Known(136)), req_method=Some(POST)
+[2m2024-10-07T15:09:58.589820Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m buffer.queue [3mself.len[0m[2m=[0m194 [3mbuf.len[0m[2m=[0m136
+[2m2024-10-07T15:09:58.589852Z[0m [34mDEBUG[0m [2mhyper::proto::h1::io[0m[2m:[0m flushed 330 bytes
+[2m2024-10-07T15:09:58.589857Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:58.589866Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:58.589870Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Init, writing: Init, keep_alive: Idle }
+[2m2024-10-07T15:09:58.617675Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m Conn::read_head
+[2m2024-10-07T15:09:58.617695Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m received 0 bytes
+[2m2024-10-07T15:09:58.617700Z[0m [35mTRACE[0m [2mhyper::proto::h1::io[0m[2m:[0m parse eof
+[2m2024-10-07T15:09:58.617704Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m State::close_read()
+[2m2024-10-07T15:09:58.617706Z[0m [34mDEBUG[0m [2mhyper::proto::h1::conn[0m[2m:[0m read eof
+[2m2024-10-07T15:09:58.617709Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m State::close_write()
+[2m2024-10-07T15:09:58.617711Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m State::close_read()
+[2m2024-10-07T15:09:58.617712Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m State::close_write()
+[2m2024-10-07T15:09:58.617715Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m flushed({role=server}): State { reading: Closed, writing: Closed, keep_alive: Disabled }
+[2m2024-10-07T15:09:58.617761Z[0m [35mTRACE[0m [2mhyper::proto::h1::conn[0m[2m:[0m shut down IO complete
+[2m2024-10-07T15:12:20.236370Z[0m [35mTRACE[0m [1mevent_stream_loop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream closed for node `dora-openai-server` [2m[3mnode_id[0m[2m=[0mNodeId("dora-openai-server")[0m
+[2m2024-10-07T15:12:20.236436Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m waiting for event stream thread [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:20.236483Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::event_stream::thread[0m[2m:[0m event stream thread finished [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:20.236711Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m waiting for drop stream thread [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m
+[2m2024-10-07T15:12:20.236717Z[0m [35mTRACE[0m [1mdrop_stream_loop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream closed for node `dora-openai-server` [2m[3mnode_id[0m[2m=[0mNodeId("dora-openai-server")[0m
+[2m2024-10-07T15:12:20.236775Z[0m [35mTRACE[0m [1mdrop[0m: [2mdora_node_api::node::drop_stream[0m[2m:[0m drop stream thread done [2m[3mnode_id[0m[2m=[0mdora-openai-server[0m

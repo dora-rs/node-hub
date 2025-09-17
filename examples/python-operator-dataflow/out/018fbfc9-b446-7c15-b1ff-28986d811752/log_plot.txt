@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'dora'
+
+ERROR conda.cli.main_run:execute(124): `conda run python -c import dora; dora.start_runtime() # plot` failed. (See above for error)

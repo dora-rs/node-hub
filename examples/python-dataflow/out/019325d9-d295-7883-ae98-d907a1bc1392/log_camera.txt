@@ -1,0 +1,11 @@
+[ WARN:0@0.030] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ERROR:0@0.030] global obsensor_uvc_stream_channel.cpp:158 getStreamChannelGroup Camera index out of range
+Traceback (most recent call last):
+  File "/home/philipp/miniconda3/bin/opencv-video-capture", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/philipp/miniconda3/lib/python3.12/site-packages/opencv_video_capture/main.py", line 141, in main
+    elif event_type == "ERROR":
+         ^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[2m2024-11-13T14:07:46.670536Z[0m [33m WARN[0m [2mdora_node_api::node[0m[2m:[0m timeout while waiting for drop tokens; closing 3 shared memory regions that might still be used
