@@ -242,4 +242,4 @@ The README.md file should explicit all inputs/outputs of the node and how to con
 
 ## License
 
-This project is licensed under Apache-2.0. Check out [NOTICE.md](../NOTICE.md) for more information.
+This project is licensed under Apache-2.0. Check out [NOTICE.md](NOTICE.md) for more information.
