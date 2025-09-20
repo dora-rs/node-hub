@@ -1,3 +1,0 @@
-Creating new Ultralytics Settings v0.0.6 file ✅ 
-View Ultralytics Settings with 'yolo settings' or at '/home/philipp/.config/Ultralytics/settings.json'
-Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
