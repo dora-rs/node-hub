@@ -13,7 +13,7 @@ nodes:
   - id: vlm
     # Comment flash_attn if not on cuda hardware
     build: |
-      pip install -e ../../node-hub/dora-qwen2-5-vl
+      pip install -e ../../dora-qwen2-5-vl
     path: dora-qwen2-5-vl
     inputs:
       image: benchmark_script/image

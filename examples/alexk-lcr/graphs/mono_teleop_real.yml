@@ -1,6 +1,6 @@
 nodes:
   - id: lcr-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10
@@ -25,7 +25,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: lcr-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10

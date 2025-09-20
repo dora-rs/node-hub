@@ -1,6 +1,6 @@
 nodes:
   - id: camera
-    build: pip install -e ../../node-hub/dora-pyrealsense
+    build: pip install -e ../../dora-pyrealsense
     path: dora-pyrealsense
     inputs:
       tick: dora/timer/millis/100
@@ -9,7 +9,7 @@ nodes:
       - depth
 
   - id: dora-vggt
-    build: pip install -e ../../node-hub/dora-vggt
+    build: pip install -e ../../dora-vggt
     path: dora-vggt
     inputs:
       image: camera/image

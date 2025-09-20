@@ -1,6 +1,6 @@
 nodes:
   - id: camera
-    build: pip install -e ../../node-hub/dora-ios-lidar
+    build: pip install -e ../../dora-ios-lidar
     path: dora-ios-lidar
     inputs:
       tick: dora/timer/millis/20
@@ -47,7 +47,7 @@ nodes:
       - image
 
   - id: plot
-    build: pip install -e ../../node-hub/dora-rerun
+    build: pip install -e ../../dora-rerun
     path: dora-rerun
     inputs:
       image: dav1d-local/image

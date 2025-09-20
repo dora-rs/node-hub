@@ -1,6 +1,6 @@
 nodes:
   - id: lcr-left-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10
@@ -24,7 +24,7 @@ nodes:
       FOLLOWER_CONTROL: ../../alexk-lcr/configs/follower.left.json
 
   - id: lcr-left-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10
@@ -36,7 +36,7 @@ nodes:
       CONFIG: ../../alexk-lcr/configs/follower.left.json
 
   - id: lcr-right-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10
@@ -60,7 +60,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.right.json
 
   - id: so100-follower
-    build: pip install ../../../node-hub/feetech-client
+    build: pip install ../../../feetech-client
     path: feetech-client
     inputs:
       pull_position: dora/timer/millis/10

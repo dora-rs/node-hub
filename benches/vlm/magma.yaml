@@ -11,7 +11,7 @@ nodes:
       TEXT_TRUTH: "This is a cat"
 
   - id: llm
-    build: pip install -e ../../node-hub/dora-magma
+    build: pip install -e ../../dora-magma
     path: dora-magma
     inputs:
       text: benchmark_script/text

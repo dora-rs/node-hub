@@ -1,6 +1,6 @@
 nodes:
   - id: lcr-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: simu-lcr-follower/tick
@@ -26,7 +26,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: lcr-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: simu-lcr-follower/tick
@@ -52,12 +52,12 @@ nodes:
       LEADER_CONTROL: ../configs/leader.left.json
 
   - id: simu-lcr-follower
-    build: pip install ../../../node-hub/mujoco-client
+    build: pip install ../../../mujoco-client
     # for windows
     # path: mujoco-client
     # for macos
     path: mjpython
-    args: ../../../node-hub/mujoco-client/mujoco_client/main.py
+    args: ../../../mujoco-client/mujoco_client/main.py
     inputs:
       write_goal_position: lcr-to-simu-lcr/follower_goal
       tick: dora/timer/millis/10

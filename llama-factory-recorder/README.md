@@ -16,7 +16,7 @@ Example:
 
 ```yaml
 - id: dora-qwenvl-recorder
-  build: pip install -e ../../node-hub/llama-factory-recorder
+  build: pip install -e ../../llama-factory-recorder
   path: llama-factory-recorder
   inputs:
     image_right: reachy/image_right

@@ -6,7 +6,7 @@ This node is used to capture video from a camera using OpenCV.
 
 ```yaml
 - id: opencv-video-capture
-  build: pip install ../../node-hub/opencv-video-capture
+  build: pip install ../../opencv-video-capture
   path: opencv-video-capture
   inputs:
     tick: dora/timer/millis/16 # try to capture at 60fps

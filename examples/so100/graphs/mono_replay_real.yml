@@ -1,6 +1,6 @@
 nodes:
   - id: replay-client
-    build: pip install ../../../node-hub/replay-client
+    build: pip install ../../../replay-client
     path: replay-client
     inputs:
       pull_position: dora/timer/millis/33
@@ -22,7 +22,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: so100-follower
-    build: pip install ../../../node-hub/feetech-client
+    build: pip install ../../../feetech-client
     path: feetech-client
     inputs:
       pull_position: dora/timer/millis/33

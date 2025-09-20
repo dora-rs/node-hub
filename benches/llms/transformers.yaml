@@ -12,7 +12,7 @@ nodes:
       TEXT_TRUTH: "This is a test"
 
   - id: llm
-    build: pip install -e ../../node-hub/dora-transformers
+    build: pip install -e ../../dora-transformers
     path: dora-transformers
     inputs:
       text: benchmark_script/text

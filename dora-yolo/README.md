@@ -6,7 +6,7 @@ This node is used to detect objects in images using YOLOv8.
 
 ```yaml
 - id: object_detection
-  build: pip install ../../node-hub/dora-yolo
+  build: pip install ../../dora-yolo
   path: dora-yolo
   inputs:
     image: webcam/image

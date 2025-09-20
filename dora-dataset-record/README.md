@@ -12,7 +12,7 @@ Node for recording robot datasets in LeRobot format. You can captures synchroniz
 ### 1. Installation
 
 ```bash
-# Source your venv 
+# Source your venv
 cd dora/node-hub/dora-dataset-record
 uv pip install -e .
 ```
@@ -25,7 +25,7 @@ Create a dataflow file, see `examples/lerobot-dataset-record/dataset_record.yml`
 nodes:
   # Dataset recorder
   - id: dataset_recorder
-    build: pip install -e ../../node-hub/dora-dataset-record
+    build: pip install -e ../../dora-dataset-record
     path: dora-dataset-record
     inputs:
       laptop: laptop_cam/image
@@ -39,25 +39,25 @@ nodes:
       REPO_ID: "your_username/your_dataset_name"
       SINGLE_TASK: "Pick up the cube and place it in the box"
       ROBOT_TYPE: "your_robot_type"
-      
+
       # Recording settings
       FPS: "30"
-      TOTAL_EPISODES: "50" 
+      TOTAL_EPISODES: "50"
       EPISODE_DURATION_S: "60"
       RESET_DURATION_S: "15"
-      
+
       # Camera configuration
       CAMERA_NAMES: "laptop,front"
       CAMERA_LAPTOP_RESOLUTION: "480,640,3"
       CAMERA_FRONT_RESOLUTION: "480,640,3"
-      
+
       # Robot configuration
       ROBOT_JOINTS: "joint1,joint2,joint3,joint4,joint5,gripper"
-      
+
       # Optional settings
       USE_VIDEOS: "true"
       SAVE_AVIF_FRAMES: "true" # This will additionally save frames
-      PUSH_TO_HUB: "false" 
+      PUSH_TO_HUB: "false"
       PRIVATE: "false"
       TAGS: "robotics,manipulation,imitation_learning"
 

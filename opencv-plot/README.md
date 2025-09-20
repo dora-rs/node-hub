@@ -6,7 +6,7 @@ This node is used to plot a text and a list of bbox on a base image (ideal for o
 
 ```yaml
 - id: opencv-plot
-  build: pip install ../../node-hub/opencv-plot
+  build: pip install ../../opencv-plot
   path: opencv-plot
   inputs:
     # image: Arrow array of size 1 containing the base image

@@ -1,6 +1,6 @@
 nodes:
   - id: replay-client
-    build: pip install ../../../node-hub/replay-client
+    build: pip install ../../../replay-client
     path: replay-client
     inputs:
       pull_position: dora/timer/millis/33
@@ -27,7 +27,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: lcr-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/33

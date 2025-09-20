@@ -1,6 +1,6 @@
 nodes:
   - id: lebai-client
-    build: pip install -e ../../../node-hub/lebai-client
+    build: pip install -e ../../../lebai-client
     path: lebai-client
     inputs:
       movec:
@@ -122,7 +122,7 @@ nodes:
       DEFAULT_QUESTION: Respond with left, right, forward, back, up or go home in order for the robotic arm to get the cup.
 
   - id: terminal-input
-    build: pip install ../../node-hub/terminal-input
+    build: pip install ../../terminal-input
     path: dynamic
     outputs:
       - data

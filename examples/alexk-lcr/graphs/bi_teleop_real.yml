@@ -1,6 +1,6 @@
 nodes:
   - id: lcr-left-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10 # pull the position every 10ms
@@ -25,7 +25,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: lcr-left-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10
@@ -37,7 +37,7 @@ nodes:
       CONFIG: ../configs/follower.left.json
 
   - id: lcr-right-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10 # pull the position every 10ms
@@ -62,7 +62,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.right.json
 
   - id: lcr-right-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position: dora/timer/millis/10

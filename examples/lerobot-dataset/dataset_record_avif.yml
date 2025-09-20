@@ -26,7 +26,7 @@ nodes:
       IMAGE_HEIGHT: "480"
 
   - id: so101
-    build: pip install -e ../../node-hub/dora-rustypot
+    build: pip install -e ../../dora-rustypot
     path: dora-rustypot
     inputs:
       tick: dora/timer/millis/10
@@ -39,7 +39,7 @@ nodes:
 
   - id: leader_interface
     path: dora-rustypot
-    build: pip install -e ../../node-hub/dora-rustypot
+    build: pip install -e ../../dora-rustypot
     inputs:
       tick: dora/timer/millis/10
     outputs:
@@ -49,7 +49,7 @@ nodes:
       IDS: "1,2,3,4,5,6"
 
   - id: dataset_recorder
-    build: pip install -e ../../node-hub/dora-dataset-record
+    build: pip install -e ../../dora-dataset-record
     path: dora-dataset-record
     inputs:
       laptop: laptop_cam/image
@@ -94,7 +94,7 @@ nodes:
       so101_new_calib_urdf: "so_arm101_description"
       so101_new_calib_transform: "0. 0. 0. 1. 0. 0. 0."
 
-# This nodes are for avif encoding using dora-rav1e
+  # This nodes are for avif encoding using dora-rav1e
   - id: rav1e-laptop
     path: dora-rav1e
     build: cargo build -p dora-rav1e --release

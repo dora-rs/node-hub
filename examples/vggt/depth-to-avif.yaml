@@ -10,7 +10,7 @@ nodes:
       CAPTURE_PATH: 1
 
   - id: dora-vggt
-    build: pip install -e ../../node-hub/dora-vggt
+    build: pip install -e ../../dora-vggt
     path: dora-vggt
     inputs:
       image: camera/image
@@ -22,7 +22,7 @@ nodes:
 
   - id: rav1e-depth
     path: dora-rav1e
-    build: pip install -e ../../node-hub/dora-rav1e
+    build: pip install -e ../../dora-rav1e
     inputs:
       depth: dora-vggt/depth
     outputs:
@@ -32,7 +32,7 @@ nodes:
 
   - id: rav1e-image
     path: dora-rav1e
-    build: pip install -e ../../node-hub/dora-rav1e
+    build: pip install -e ../../dora-rav1e
     inputs:
       image: dora-vggt/image
     outputs:

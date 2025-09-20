@@ -13,7 +13,7 @@ nodes:
 
   - id: llm
     build: |
-      pip install -e ../../node-hub/dora-qwen
+      pip install -e ../../dora-qwen
     path: dora-qwen
     inputs:
       text: benchmark_script/text

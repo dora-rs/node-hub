@@ -1,6 +1,6 @@
 nodes:
   - id: lcr-leader
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position:
@@ -49,7 +49,7 @@ nodes:
       FOLLOWER_CONTROL: ../configs/follower.left.json
 
   - id: lcr-follower
-    build: pip install ../../../node-hub/dynamixel-client
+    build: pip install ../../../dynamixel-client
     path: dynamixel-client
     inputs:
       pull_position:
@@ -66,7 +66,7 @@ nodes:
       CONFIG: ../configs/follower.left.json
 
   - id: opencv-video-capture
-    build: pip install ../../../node-hub/opencv-video-capture
+    build: pip install ../../../opencv-video-capture
     path: opencv-video-capture
     inputs:
       tick:
@@ -80,7 +80,7 @@ nodes:
       IMAGE_HEIGHT: 540
 
   - id: video-encoder
-    build: pip install ../../../node-hub/video-encoder
+    build: pip install ../../../video-encoder
     path: video-encoder
     inputs:
       image: opencv-video-capture/image
@@ -92,7 +92,7 @@ nodes:
       FPS: 30
 
   - id: lerobot-dashboard
-    build: pip install ../../../node-hub/lerobot-dashboard
+    build: pip install ../../../lerobot-dashboard
     path: lerobot-dashboard
     inputs:
       tick:

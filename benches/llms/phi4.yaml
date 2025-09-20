@@ -14,7 +14,7 @@ nodes:
   - id: llm
     build: |
       pip install flash-attn --no-build-isolation
-      pip install -e ../../node-hub/dora-phi4
+      pip install -e ../../dora-phi4
     path: dora-phi4
     inputs:
       text: benchmark_script/text

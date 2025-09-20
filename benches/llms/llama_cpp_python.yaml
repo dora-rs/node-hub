@@ -12,7 +12,7 @@ nodes:
       TEXT_TRUTH: "This is a test"
 
   - id: llm
-    build: pip install -e ../../node-hub/dora-llama-cpp-python
+    build: pip install -e ../../dora-llama-cpp-python
     path: dora-llama-cpp-python
     inputs:
       text:

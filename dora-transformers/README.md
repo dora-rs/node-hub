@@ -30,17 +30,17 @@ Configure the node in your dataflow YAML file:
   build: pip install -e path/to/dora-transformers
   path: dora-transformers
   inputs:
-    text: source_node/text  # Input text to generate response for
+    text: source_node/text # Input text to generate response for
   outputs:
-    - text  # Generated response text
+    - text # Generated response text
   env:
-    MODEL_NAME: "Qwen/Qwen2.5-0.5B-Instruct"  # Model from Hugging Face
+    MODEL_NAME: "Qwen/Qwen2.5-0.5B-Instruct" # Model from Hugging Face
     SYSTEM_PROMPT: "You're a very succinct AI assistant with short answers."
     ACTIVATION_WORDS: "what how who where you"
-    MAX_TOKENS: "128"  # Reduced for concise responses
-    DEVICE: "cuda"  # Use "cpu" for CPU, "cuda" for NVIDIA GPU, "mps" for Apple Silicon
-    ENABLE_MEMORY_EFFICIENT: "true"  # Enable 8-bit quantization and memory optimizations
-    TORCH_DTYPE: "float16"  # Use half precision for better memory efficiency
+    MAX_TOKENS: "128" # Reduced for concise responses
+    DEVICE: "cuda" # Use "cpu" for CPU, "cuda" for NVIDIA GPU, "mps" for Apple Silicon
+    ENABLE_MEMORY_EFFICIENT: "true" # Enable 8-bit quantization and memory optimizations
+    TORCH_DTYPE: "float16" # Use half precision for better memory efficiency
 ```
 
 ### Configuration Options
@@ -56,6 +56,7 @@ Configure the node in your dataflow YAML file:
 ### Memory Management
 
 The node includes several memory optimization features:
+
 - 8-bit quantization for CUDA devices
 - Automatic CUDA cache clearing
 - Memory-efficient model loading
@@ -64,6 +65,7 @@ The node includes several memory optimization features:
 ## Example: Voice Assistant Pipeline
 
 Create a conversational AI pipeline that:
+
 1. Captures audio from microphone
 2. Converts speech to text
 3. Generates AI responses using transformers
@@ -72,7 +74,7 @@ Create a conversational AI pipeline that:
 ```yaml
 nodes:
   - id: dora-microphone
-    build: pip install -e ../../node-hub/dora-microphone
+    build: pip install -e ../../dora-microphone
     path: dora-microphone
     inputs:
       tick: dora/timer/millis/2000
@@ -80,7 +82,7 @@ nodes:
       - audio
 
   - id: dora-vad
-    build: pip install -e ../../node-hub/dora-vad
+    build: pip install -e ../../dora-vad
     path: dora-vad
     inputs:
       audio: dora-microphone/audio
@@ -89,7 +91,7 @@ nodes:
       - timestamp_start
 
   - id: dora-distil-whisper
-    build: pip install -e ../../node-hub/dora-distil-whisper
+    build: pip install -e ../../dora-distil-whisper
     path: dora-distil-whisper
     inputs:
       input: dora-vad/audio
@@ -99,7 +101,7 @@ nodes:
       TARGET_LANGUAGE: english
 
   - id: dora-transformers
-    build: pip install -e ../../node-hub/dora-transformers
+    build: pip install -e ../../dora-transformers
     path: dora-transformers
     inputs:
       text: dora-distil-whisper/text
@@ -115,7 +117,7 @@ nodes:
       TORCH_DTYPE: "float16"
 
   - id: dora-kokoro-tts
-    build: pip install -e ../../node-hub/dora-kokoro-tts
+    build: pip install -e ../../dora-kokoro-tts
     path: dora-kokoro-tts
     inputs:
       text: dora-transformers/text
@@ -133,6 +135,7 @@ dora run test.yml
 ### Troubleshooting
 
 If you encounter CUDA out of memory errors:
+
 1. Set `DEVICE: "cpu"` for CPU-only inference
 2. Enable memory optimizations with `ENABLE_MEMORY_EFFICIENT: "true"`
 3. Use a smaller model or reduce `MAX_TOKENS`
@@ -141,17 +144,20 @@ If you encounter CUDA out of memory errors:
 ## Contribution Guide
 
 Format with [ruff](https://docs.astral.sh/ruff/):
+
 ```bash
 uv pip install ruff
 uv run ruff check . --fix
 ```
 
 Lint with ruff:
+
 ```bash
 uv run ruff check .
 ```
 
 Test with [pytest](https://github.com/pytest-dev/pytest):
+
 ```bash
 uv pip install pytest
 uv run pytest . # Test

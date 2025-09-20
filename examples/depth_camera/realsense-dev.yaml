@@ -1,6 +1,6 @@
 nodes:
   - id: camera
-    build: pip install -e ../../node-hub/dora-pyrealsense
+    build: pip install -e ../../dora-pyrealsense
     path: sudo
     args: dora-pyrealsense
     inputs:
@@ -10,7 +10,7 @@ nodes:
       - depth
 
   - id: plot
-    build: pip install -e ../../node-hub/dora-rerun
+    build: pip install -e ../../dora-rerun
     path: dora-rerun
     inputs:
       image: camera/image
