@@ -41,7 +41,7 @@ def test_download_policy():
 
 def test_download_vision_model():
     # Skip vision test as it is currently failing on macOS
-    # See: https://github.com/dora-rs/dora/actions/runs/13484462433/job/37673857429
+    # See: https://github.com/dora-rs/node-hub/actions/runs/13484462433/job/37673857429
     """TODO: Add docstring."""
     from dora_rdt_1b.main import get_vision_model
 

@@ -14,6 +14,6 @@ dora run qwen2-5-vl-vision-only-dev.yml --uv
 
 ```bash
 uv venv -p 3.11 --seed
-dora build https://raw.githubusercontent.com/dora-rs/dora/main/examples/vlm/qwenvl.yml --uv
-dora run https://raw.githubusercontent.com/dora-rs/dora/main/examples/vlm/qwenvl.yml --uv
+dora build https://raw.githubusercontent.com/dora-rs/node-hub/main/examples/vlm/qwenvl.yml --uv
+dora run https://raw.githubusercontent.com/dora-rs/node-hub/main/examples/vlm/qwenvl.yml --uv
 ```

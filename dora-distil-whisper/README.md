@@ -19,10 +19,10 @@ This node is supposed to be used as follows:
 ## Examples
 
 - speech to text
-  - github: https://github.com/dora-rs/dora/blob/main/examples/speech-to-text
+  - github: https://github.com/dora-rs/node-hub/blob/main/examples/speech-to-text
   - website: https://dora-rs.ai/docs/examples/stt
 - vision language model
-  - github: https://github.com/dora-rs/dora/blob/main/examples/vlm
+  - github: https://github.com/dora-rs/node-hub/blob/main/examples/vlm
   - website: https://dora-rs.ai/docs/examples/vlm
 
 ## License

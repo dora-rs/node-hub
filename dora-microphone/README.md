@@ -31,7 +31,7 @@ There's a maximum amount of voice duration, to avoid having no input for too lon
 ## Reference documentation
 
 - dora-microphone
-  - github: https://github.com/dora-rs/dora/blob/main/node-hub/dora-microphone
+  - github: https://github.com/dora-rs/node-hub/blob/main/node-hub/dora-microphone
   - website: http://dora-rs.ai/docs/nodes/microphone
 - sounddevice
   - website: https://python-sounddevice.readthedocs.io/en/0.5.1/
@@ -40,7 +40,7 @@ There's a maximum amount of voice duration, to avoid having no input for too lon
 ## Examples
 
 - Speech to Text
-  - github: https://github.com/dora-rs/dora/blob/main/examples/speech-to-text
+  - github: https://github.com/dora-rs/node-hub/blob/main/examples/speech-to-text
   - website: https://dora-rs.ai/docs/examples/stt
 
 ## License

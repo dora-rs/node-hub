@@ -28,5 +28,5 @@ This node is supposed to be used as follows:
 ## Examples
 
 - Vision Language Model
-  - Github: https://github.com/dora-rs/dora/blob/main/examples/vlm
+  - Github: https://github.com/dora-rs/node-hub/blob/main/examples/vlm
   - Website: https://dora-rs.ai/docs/examples/vlm
