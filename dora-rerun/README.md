@@ -341,7 +341,7 @@ Make sure to name the dataflow as follows:
 ## Reference documentation
 
 - dora-rerun
-  - github: https://github.com/dora-rs/node-hub/blob/main/node-hub/dora-rerun
+  - github: https://github.com/dora-rs/node-hub/blob/main/dora-rerun
   - website: http://dora-rs.ai/docs/nodes/rerun
 - rerun
   - github: https://github.com/rerun-io/rerun

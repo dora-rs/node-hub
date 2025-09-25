@@ -31,7 +31,7 @@ There's a maximum amount of voice duration, to avoid having no input for too lon
 ## Reference documentation
 
 - dora-microphone
-  - github: https://github.com/dora-rs/node-hub/blob/main/node-hub/dora-microphone
+  - github: https://github.com/dora-rs/node-hub/blob/main/dora-microphone
   - website: http://dora-rs.ai/docs/nodes/microphone
 - sounddevice
   - website: https://python-sounddevice.readthedocs.io/en/0.5.1/
