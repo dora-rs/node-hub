@@ -13,6 +13,7 @@ members = [
     "dora-rav1e",
     "dora-dav1d",
     "dora-rustypot",
+    "dora-openai-websocket",
 ]
 
 [workspace.package]
