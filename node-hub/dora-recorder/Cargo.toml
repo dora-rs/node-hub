@@ -1,0 +1,16 @@
+[package]
+name = "dora-recorder"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+
+[dependencies]
+tokio = { version = "1.36.0", features = ["fs", "rt", "rt-multi-thread"] }
+dora-node-api = { workspace=true }
+eyre = "0.6.8"
+chrono = "0.4.31"
+arrow = { workspace=true }

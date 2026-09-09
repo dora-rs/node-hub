@@ -3970,6 +3970,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "dora-recorder"
+version = "0.5.0"
+dependencies = [
+ "arrow 54.3.1",
+ "chrono",
+ "dora-node-api",
+ "eyre",
+ "tokio",
+]
+
+[[package]]
 name = "dora-rerun"
 version = "0.5.0"
 dependencies = [
